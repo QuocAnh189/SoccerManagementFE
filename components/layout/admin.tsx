@@ -1,7 +1,7 @@
 import { AuthContext } from '@/contexts/AuthProvider';
 import { ERole, LayoutProps } from '@/interfaces';
 import { useRouter } from 'next/router';
-import { useContext, useEffect, useRef } from 'react';
+import { useContext, useEffect } from 'react';
 import { Navbar } from '../landing-page';
 
 export function AdminLayout({ children }: LayoutProps) {

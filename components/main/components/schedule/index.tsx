@@ -2,13 +2,13 @@
 import { Tabs, TabList, Tab, TabPanels, TabPanel } from '@chakra-ui/react';
 
 //component
-import BracketComponent from './Bracket';
+// import BracketComponent from './Bracket';
 import KnockOut from './Knockout/KnockOut';
 import GroupStage from './GroupStage/GroupStage';
 
 //store
 import { useTournamentStore } from '@/stores';
-import ChartView from './GroupStage/ChartView';
+// import ChartView from './GroupStage/ChartView';
 
 const ScheduleComponent = () => {
   const tournament = useTournamentStore(state => state.tournament);
@@ -66,14 +66,14 @@ const ScheduleComponent = () => {
             <GroupStage />
           </TabPanel>
           <TabPanel>
-            <ChartView />
+            {/* <ChartView /> */}
           </TabPanel>
         </TabPanels>
       )}
       {tournament.formula === 'KNOCKOUT' && (
         <TabPanels>
           <TabPanel>
-            <BracketComponent />
+            {/* <BracketComponent /> */}
           </TabPanel>
           <TabPanel>
             <KnockOut />
