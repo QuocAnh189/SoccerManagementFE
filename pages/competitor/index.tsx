@@ -116,7 +116,7 @@ const Competitors: NextPageWithLayout = () => {
 
   if (isLoading)
     return (
-      <Box>
+      <Box paddingTop="150px">
         <SkeletonComponent />
       </Box>
     );

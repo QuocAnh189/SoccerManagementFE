@@ -3,7 +3,7 @@ import { Stack, Skeleton, Box } from '@chakra-ui/react';
 
 const SkeletonComponent = () => {
   return (
-    <Stack padding={4} spacing={1}>
+    <Stack padding={4} spacing={1} className='w-full'>
       <Skeleton height="40px">
         <Box>Hello World!</Box>
       </Skeleton>

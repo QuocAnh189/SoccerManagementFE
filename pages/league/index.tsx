@@ -267,7 +267,9 @@ const FindLeagues: NextPageWithLayout = () => {
         {leagues.length !== 0 ? (
           leagues.map((league, index) => <League key={index} league={league} />)
         ) : (
-          <Text>Loading</Text>
+          <div className=" w-screen flex justify-end">
+            <SkeletonComponent />
+          </div>
         )}
       </Grid>
     </Flex>
